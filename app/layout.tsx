@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { ThemeProvider } from './components/theme-provider';
 import { manropeFont } from './helpers/fonts';
+import Header from './components/header';
+import Footer from './components/footer';
 
 export const metadata: Metadata = {
   title: "patricklimax",
@@ -21,10 +23,10 @@ export default function RootLayout({
           defaultTheme="system"
           enableSystem
           disableTransitionOnChange>
-          <main className='mx-auto max-w-5xl flex-col items-center justify-center px-5 py-8'>
-            {/* <Header /> */}
+          <main className='mx-auto max-w-5xl'>
+            <Header />
             {children}
-            {/* <Footer /> */}
+            <Footer />
           </main>
         </ThemeProvider>
       </body>
