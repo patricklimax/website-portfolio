@@ -11,7 +11,7 @@ const Header = () => {
   return (
     <header className='mx-auto max-w-5xl mb-8'>
       <Card className='mx-auto max-w-5xl'>
-        <CardContent className='w-full p-4 flex items-center justify-between'>
+        <CardContent className='w-full p-4 flex-row justify-between'>
           <div className='flex items-center gap-4'>
             <div className='md:hidden'>
               <Sheet>
