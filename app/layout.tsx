@@ -23,7 +23,7 @@ export default function RootLayout({
           defaultTheme="system"
           enableSystem
           disableTransitionOnChange>
-          <main className='mx-auto max-w-5xl'>
+          <main className='mx-auto max-w-5xl p-3 md:p-0'>
             <Header />
             {children}
             <Footer />
