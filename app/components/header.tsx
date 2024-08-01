@@ -13,7 +13,7 @@ const Header = () => {
       <Card className='mx-auto max-w-5xl'>
         <CardContent className='w-full p-4 flex-row justify-between'>
           <div className='flex items-center gap-4'>
-            <div className='md:hidden'>
+            <div>
               <Sheet>
                 <SheetTrigger asChild>
                   <Button size={'icon'} variant={'outline'}>
