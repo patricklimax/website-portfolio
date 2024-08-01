@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { ThemeProvider } from './components/theme-provider';
+import { ThemeProvider } from './providers/theme-provider';
 import { manropeFont } from './helpers/fonts';
 import Header from './components/header';
 import Footer from './components/footer';

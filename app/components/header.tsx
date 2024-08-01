@@ -1,10 +1,9 @@
-import Link from 'next/link';
 import { Logotipo } from './logotipo';
-import { ToggleModeTheme } from './toggle-mode-theme';
+import { ToggleModeTheme } from './toggle-theme';
 import { Card, CardContent } from './ui/card';
 import { Button } from './ui/button';
-import { Sheet, SheetContent, SheetDescription, SheetHeader, SheetTitle, SheetTrigger } from './ui/sheet';
-import { MenuIcon, TextIcon } from 'lucide-react';
+import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from './ui/sheet';
+import { TextIcon } from 'lucide-react';
 import { Separator } from './ui/separator';
 import NavBar from './navbar';
 
