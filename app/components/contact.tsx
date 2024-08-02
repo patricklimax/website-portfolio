@@ -60,13 +60,13 @@ const ContactItem = ({ name, href, icon: Icon }: ContactItemProps) => {
 
 const ContactCard = () => {
   return (
-    <Card className='md:col-start-7 md:col-end-13 md:row-start-10 md:row-end-13'>
-      <CardContent className='justify-between gap-3'>
+    <Card className='h-full'>
+      <CardContent className='justify-between gap-0'>
         <CardTitle className='text-lg font-medium text-start w-full'>
           Fale comigo
         </CardTitle>
 
-        <div className='flex items-center justify-between gap-4'>
+        <div className='flex items-center justify-between gap-4 mt-3'>
           {contacts.map((contact) => (
             <ContactItem
               key={contact.name}

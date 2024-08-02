@@ -37,9 +37,9 @@ const ExperienceItem = ({quantity, description}: ExperienceProps) => {
 
 const ExperienceCard = () => {
   return (
-    <Card className='md:col-start-10 md:col-end-13 md:row-start-2 md:row-end-10'>
+    <Card className='h-full'>
       <CardContent
-        className='grid grid-cols-2 md:grid-cols-1 md:place-content-between md:py-8'>
+        className='grid grid-cols-2 md:grid-cols-1 md:place-content-between'>
         {experiences.map((experience) => (
           <ExperienceItem
             key={experience.description}

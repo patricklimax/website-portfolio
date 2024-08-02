@@ -1,6 +1,6 @@
+import ContactCard from '@/components/contact';
+import ExperienceCard from '@/components/experience';
 import AvatarCard from './components/card-avatar';
-import ContactCard from './components/card-contact';
-import ExperienceCard from './components/card-experience';
 import ProjectCard from './components/card-project';
 import ServicesCard from './components/card-services';
 import StacksCard from './components/card-stacks';
@@ -17,16 +17,19 @@ export default function Home() {
 
       <ProjectCard />
 
-      <StacksCard/>
+      <StacksCard />
 
       <TechToolsCard />
 
       <ServicesCard />
 
-      <ExperienceCard />
-      
-      <ContactCard/>
+      <div className='md:col-start-10 md:col-end-13 md:row-start-2 md:row-end-10'>
+        <ExperienceCard />
+      </div>
 
+      <div className='md:col-start-7 md:col-end-13 md:row-start-10 md:row-end-13'>
+        <ContactCard />
+     </div>
     </section>
   );
 }
