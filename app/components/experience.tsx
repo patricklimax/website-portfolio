@@ -5,14 +5,14 @@ interface ExperienceProps {
   description: string;
 }
 
-const experiences: ExperienceProps[] = [
+export const experiences: ExperienceProps[] = [
   {
     quantity: 3,
     description: 'Anos de Experiência'
   },
   {
     quantity: 22,
-    description: 'Total de Projetos Finalizados'
+    description: 'Total de Projetos'
   },
   {
     quantity: 8,
@@ -24,7 +24,7 @@ const experiences: ExperienceProps[] = [
   },
 ]
 
-const ExperienceItem = ({quantity, description}: ExperienceProps) => {
+export const ExperienceItem = ({quantity, description}: ExperienceProps) => {
   return (
     <div className='text-center'>
       <p className='text-5xl text-primary md:text-4xl lg:text-5xl font-bold'>
