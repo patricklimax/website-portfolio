@@ -5,6 +5,9 @@ const nextConfig = {
       {
         hostname: 'utfs.io',
       },
+      {
+        hostname: 'uploadthing-prod-sea1.s3.us-west-2.amazonaws.com',
+      },
     ],
   },
 };
