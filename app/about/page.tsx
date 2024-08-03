@@ -18,7 +18,7 @@ const AboutPage = () => {
 
       <div className='w-full grid grid-cols-1 gap-4 md:grid md:grid-cols-12 md:grid-rows-12 md:h-[696px]'>
         <Card className='md:col-start-9 md:col-end-13 md:row-start-1 md:row-end-5'>
-          <CardContent className='py-4'>
+          <CardContent className='justify-center p-0'>
             <Avatar />
           </CardContent>
         </Card>
