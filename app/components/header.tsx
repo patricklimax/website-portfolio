@@ -2,10 +2,10 @@ import { Logotipo } from './logotipo';
 import { ToggleModeTheme } from './toggle-theme';
 import { Card, CardContent } from './ui/card';
 import { Button } from './ui/button';
-import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from './ui/sheet';
+import { Sheet, SheetClose, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from './ui/sheet';
 import { TextIcon } from 'lucide-react';
 import { Separator } from './ui/separator';
-import NavBar from './navbar';
+import { NavBarDesktop, NavBarMobile } from './navbar';
 
 const Header = () => {
   return (
@@ -13,7 +13,7 @@ const Header = () => {
       <Card className='mx-auto max-w-5xl'>
         <CardContent className='w-full p-4 flex-row justify-between'>
           <div className='flex items-center gap-4'>
-            <div>
+            <div className='md:hidden'>
               <Sheet>
                 <SheetTrigger asChild>
                   <Button size={'icon'} variant={'outline'}>
@@ -23,7 +23,9 @@ const Header = () => {
                 <SheetContent side={'left'}>
                   <SheetHeader>
                     <SheetTitle>
-                      <Logotipo />
+                      <SheetClose asChild>
+                        <Logotipo />
+                      </SheetClose>
                     </SheetTitle>
 
                     <div className='py-4' >
@@ -31,7 +33,7 @@ const Header = () => {
                     </div>
 
                     <div>
-                      <NavBar />
+                      <NavBarMobile />
                     </div>
                   </SheetHeader>
                 </SheetContent>
@@ -41,8 +43,10 @@ const Header = () => {
               <Logotipo />
             </div>
           </div>
-          {/* <NavMenu /> */}
 
+          <div className='hidden md:block'>
+            <NavBarDesktop />
+          </div>
 
           <ToggleModeTheme />
         </CardContent>

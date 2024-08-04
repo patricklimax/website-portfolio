@@ -16,29 +16,29 @@ interface LinkNav {
 
 export const links: LinkNav[] = [
   {
-    name: ".home",
+    name: "Home",
     href: "/",
     icon: HomeIcon
   },
   {
-    name: ".sobre",
+    name: "Sobre",
     href: "/about",
     icon: UserIcon
   },
   {
-    name: ".serviços",
+    name: "Serviços",
     href: "/services",
     icon: BriefcaseBusinessIcon
   },
   {
-    name: ".projetos",
+    name: "Projetos",
     href: "/projects",
     icon: LayoutDashboardIcon
   },
 ];
 
 
-const NavBar = () => {
+export const NavBarMobile = () => {
   const pathname = usePathname();
   return (
     <>
@@ -68,4 +68,30 @@ const NavBar = () => {
   );
 }
 
-export default NavBar;
+export const NavBarDesktop = () => {
+  const pathname = usePathname();
+  return (
+    <>
+      <nav className='flex items-center gap-4'>
+        {links.map((link) => {
+          const LinkIcon = link.icon;
+          return (
+            <Link
+              className='w-full'
+              key={link.name}
+              href={link.href}>
+                <Button variant={'outline'}
+                  className={
+                    clsx(
+                      'w-full border-none flex gap-2 items-center justify-start font-bold text-foreground',
+                      { 'text-primary border-primary': pathname === link.href }
+                    )}>
+                  <LinkIcon className="w-4" />
+                  <p>{link.name}</p>
+                </Button>
+            </Link>
+          );
+        })}
+      </nav></>
+  );
+}
