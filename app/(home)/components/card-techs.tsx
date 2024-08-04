@@ -4,6 +4,7 @@ import { Badge } from '@/components/ui/badge';
 import {
   IconBrandCss3, IconBrandGit, IconBrandGithub, IconBrandHtml5, IconBrandJavascript, IconBrandNextjs, IconBrandNodejs, IconBrandNpm, IconBrandPrisma, IconBrandReact, IconBrandSupabase, IconBrandTailwind, IconBrandTypescript, IconBrandVercel, IconBrandVite, IconBrandVscode, IconDatabasePlus
 } from '@tabler/icons-react';
+import Marquee from '@/components/magicui/marquee';
 
 interface Props {
   icon: ElementType
@@ -12,13 +13,13 @@ interface Props {
 const ToolsCard = () => {
   return (
     <div className='flex gap-2 text-xs py-1 items-center w-full overflow-x-auto [&::-webkit-scrollbar]:hidden'>
-      {/* <Marquee pauseOnHover className="[--duration:20s]"> */}
-      <Badge variant={'outline'}>Figma</Badge>
-      <Badge variant={'outline'}>UXdesign</Badge>
-      <Badge variant={'outline'}>UIdesign</Badge>
-      <Badge variant={'outline'}>Interativo</Badge>
-      <Badge variant={'outline'}>Proativo</Badge>
-      {/* </Marquee> */}
+      <Marquee pauseOnHover className="[--duration:40s]">
+        <Badge variant={'outline'}>Figma</Badge>
+        <Badge variant={'outline'}>UXdesign</Badge>
+        <Badge variant={'outline'}>UIdesign</Badge>
+        <Badge variant={'outline'}>Interativo</Badge>
+        <Badge variant={'outline'}>Proativo</Badge>
+      </Marquee>
     </div>
   );
 }
@@ -34,26 +35,26 @@ const TechCard = ({ icon: Icon }: Props) => {
 const Technologies = () => {
   return (
     <div className='w-full flex gap-2 items-center overflow-x-auto [&::-webkit-scrollbar]:hidden'>
-      {/* <Marquee reverse pauseOnHover className="[--duration:20s]"> */}
-      <TechCard icon={IconBrandHtml5} />
-      <TechCard icon={IconBrandCss3} />
-      <TechCard icon={IconBrandTailwind} />
-      <TechCard icon={IconBrandJavascript} />
-      <TechCard icon={IconBrandTypescript} />
-      <TechCard icon={IconBrandReact} />
-      <TechCard icon={IconBrandNextjs} />
-      <TechCard icon={IconBrandGit} />
-      <TechCard icon={IconBrandGithub} />
-      <TechCard icon={IconBrandVite} />
-      <TechCard icon={IconBrandVercel} />
-      <TechCard icon={IconBrandSupabase} />
-      <TechCard icon={IconBrandPrisma} />
-      <TechCard icon={IconBrandNodejs} />
-      <TechCard icon={IconBrandNpm} />
-      <TechCard icon={IconBrandVscode} />
-      <TechCard icon={IconDatabasePlus} />
-      {/* express axios postgress */}
-      {/* </Marquee> */}
+      <Marquee reverse pauseOnHover className="[--duration:40s]">
+        <TechCard icon={IconBrandHtml5} />
+        <TechCard icon={IconBrandCss3} />
+        <TechCard icon={IconBrandTailwind} />
+        <TechCard icon={IconBrandJavascript} />
+        <TechCard icon={IconBrandTypescript} />
+        <TechCard icon={IconBrandReact} />
+        <TechCard icon={IconBrandNextjs} />
+        <TechCard icon={IconBrandGit} />
+        <TechCard icon={IconBrandGithub} />
+        <TechCard icon={IconBrandVite} />
+        <TechCard icon={IconBrandVercel} />
+        <TechCard icon={IconBrandSupabase} />
+        <TechCard icon={IconBrandPrisma} />
+        <TechCard icon={IconBrandNodejs} />
+        <TechCard icon={IconBrandNpm} />
+        <TechCard icon={IconBrandVscode} />
+        <TechCard icon={IconDatabasePlus} />
+        {/* express axios postgress */}
+      </Marquee>
     </div>
   );
 }

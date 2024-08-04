@@ -1,4 +1,5 @@
 import { Card, CardContent } from '@/components/ui/card';
+import NumberTicker from './magicui/number-ticker';
 
 interface ExperienceProps {
   quantity: number;
@@ -7,12 +8,12 @@ interface ExperienceProps {
 
 export const experiences: ExperienceProps[] = [
   {
-    quantity: 3,
+    quantity: 2,
     description: 'Anos de Experiência'
   },
   {
     quantity: 22,
-    description: 'Total de Projetos'
+    description: 'Projetos Construídos'
   },
   {
     quantity: 8,
@@ -28,7 +29,7 @@ export const ExperienceItem = ({quantity, description}: ExperienceProps) => {
   return (
     <div className='text-center'>
       <p className='text-5xl text-primary md:text-4xl lg:text-5xl font-bold'>
-        {quantity}
+        <NumberTicker value={quantity > 1 ? quantity : 0.1} />
       </p>
       <p>{description}</p>
     </div>
