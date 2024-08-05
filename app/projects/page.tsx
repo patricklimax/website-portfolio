@@ -7,9 +7,7 @@ import { MoveLeftIcon } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
 
-const projectsOrder = projects.sort(function (a, b) {
-  return a.id < b.id ? -1 : a.id > b.id ? 1 : 0;
-})
+const projectOrderIDdesc = projects.sort((projectA, projectB) => projectA.id - projectB.id).reverse()
 
 const ProjectsPage = () => {
   return (
@@ -24,7 +22,7 @@ const ProjectsPage = () => {
       <div className='w-full'>
         <div
           className='w-full grid grid-cols-1 md:grid-cols-2 gap-4'>
-          {projectsOrder.map(project => (
+          {projectOrderIDdesc.map(project => (
             <div
               key={project.id}
               className='w-full md:h-auto border rounded-md group/item relative'>
@@ -45,7 +43,7 @@ const ProjectsPage = () => {
                 <p className='text-lg md:text-2xl text-primary font-semibold'>
                   {project.name}
                 </p>
-                <p className='font-light text-sm md:text-base md:bg-background md:p-2 rounded-md mt-2 mb:mt-0'>
+                <p className='font-light text-sm md:text-base md:bg-background/70 md:p-2 rounded-md mt-2 mb:mt-0'>
                   {project.descriptionCover}
                 </p>
 

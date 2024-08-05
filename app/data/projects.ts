@@ -7,7 +7,7 @@
 // 7946, 8015, 8085, 8131, 8290, 8476, 8517, 8519, 8620, 8624,
 // 8726, 9172, 9220, 9350, 9368, 9437, 9494, 9558, 9697, 9736
 
-import { Project } from '@/types/project-item';
+import { Project } from '@/interfaces/project-item';
 
 export const projects: Project[] = [
   {
