@@ -28,7 +28,7 @@ const ProjectsPage = () => {
               className='w-full md:h-auto border rounded-md group/item relative'>
 
               <div
-                className='hidden md:block group/edit w-full h-0 absolute bottom-0 group-hover/item:h-full bg-gradient-to-b from-black to-black/20 transition-all duration-500 rounded-md'>
+                className='hidden md:block group/edit w-full h-0 absolute bottom-0 group-hover/item:h-full bg-gradient-to-b from-background to-background/75 transition-all duration-500 rounded-md'>
               </div>
 
               <Image
@@ -43,7 +43,7 @@ const ProjectsPage = () => {
                 <p className='text-lg md:text-2xl text-primary font-semibold'>
                   {project.name}
                 </p>
-                <p className='font-light text-sm md:text-base md:bg-background/70 md:p-2 rounded-md mt-2 mb:mt-0'>
+                <p className='text-sm font-medium  rounded-md mt-2 mb:mt-0 md:px-10 shadow-md'>
                   {project.descriptionCover}
                 </p>
 
