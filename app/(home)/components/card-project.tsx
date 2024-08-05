@@ -1,7 +1,11 @@
 import { Card, CardContent, CardTitle } from '@/components/ui/card';
+import { projects } from '@/data/projects';
 import { MoveRightIcon } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
+
+const projectOrderIDdesc = projects.sort((projectA, projectB) => projectA.id - projectB.id).reverse()
+const recentProject = projectOrderIDdesc[0]
 
 const ProjectCard = () => {
   return (
@@ -13,10 +17,10 @@ const ProjectCard = () => {
 
         <div className='w-full h-[150px]'>
           <Image
-            src={"/images/project1.png"}
+            src={recentProject.imgUrlCover}
             width={248}
             height={100}
-            alt='imagem do último projeto'
+            alt={`Image do projeto ${recentProject.name}`}
             className='border rounded-md shadow-md shadow-background mx-auto h-[150px] w-8/12'
           />
         </div>

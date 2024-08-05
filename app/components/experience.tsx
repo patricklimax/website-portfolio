@@ -28,10 +28,10 @@ export const experiences: ExperienceProps[] = [
 export const ExperienceItem = ({quantity, description}: ExperienceProps) => {
   return (
     <div className='text-center'>
-      <p className='text-5xl text-primary md:text-4xl lg:text-5xl font-bold'>
+      <p className='text-5xl md:text-4xl lg:text-5xl font-bold text-primary'>
         <NumberTicker value={quantity > 1 ? quantity : 0.1} />
       </p>
-      <p>{description}</p>
+      <p className='text-muted-foreground'>{description}</p>
     </div>
   )
 }

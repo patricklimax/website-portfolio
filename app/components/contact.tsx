@@ -1,6 +1,6 @@
 import { Card, CardContent, CardTitle } from '@/components/ui/card';
 import { IconBrandGithub, IconBrandInstagram, IconBrandLinkedin, IconBrandWhatsapp } from '@tabler/icons-react';
-import { MoveRightIcon } from 'lucide-react';
+import { MoveLeftIcon, MoveRightIcon } from 'lucide-react';
 import Link from 'next/link';
 import { ElementType } from 'react';
 
@@ -76,13 +76,13 @@ const ContactCard = () => {
           ))}
         </div>
 
-        <div className='w-full flex items-center justify-between text-muted-foreground '>
-          <p className='text-sm'>Fale comigo</p>
-          <Link href={'/projects'} className='cursor-pointer group/item text-primary'>
-            <MoveRightIcon
+        <div className='w-full flex items-center justify-between text-muted-foreground group/item'>
+          <p className='text-sm'>Fale comigo clicando nos ícones acima</p>
+          <span className='text-primary'>
+            <MoveLeftIcon
               size={38}
-              className='stroke-1 transition-all duration-500 group/edit group-hover/item:text-foreground group/edit group-hover/item:translate-x-2' />
-          </Link>
+              className='stroke-1 rotate-45 transition-all duration-500 group/edit group-hover/item:text-foreground group/edit group-hover/item:-translate-x-6' />
+          </span>
         </div>
       </CardContent>
     </Card>
