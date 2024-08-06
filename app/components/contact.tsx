@@ -32,16 +32,6 @@ const contacts: ContactItemProps[] = [
     href: 'https://wa.me/5598983342518',
     icon: IconBrandWhatsapp
   },
-  {
-    name: 'whatsapp1',
-    href: 'https://www.instagram.com/patricklimax/',
-    icon: IconBrandInstagram
-  },
-  {
-    name: 'whatsapp2',
-    href: 'https://wa.me/5598983342518',
-    icon: IconBrandWhatsapp
-  }
 ]
 
 
