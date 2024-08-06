@@ -9,6 +9,8 @@ import { services } from '@/data/services';
 import { ChevronsRightIcon, MoveLeftIcon, MoveRightIcon } from 'lucide-react';
 import Link from 'next/link';
 
+const educationsOrder = educations.sort((educA, educB) => educA.id - educB.id).reverse()
+
 const AboutPage = () => {
   return (
     <section className='mx-auto max-w-5xl'>
@@ -85,7 +87,7 @@ const AboutPage = () => {
 
             <div className='h-full flex flex-col gap-2 overflow-y-auto [&::-webkit-scrollbar]:hidden'>
               {
-                educations.map(educ => (
+                educationsOrder.map(educ => (
                   <>
                     <div
                       className='w-full font-light text-xs flex flex-col gap-1'
