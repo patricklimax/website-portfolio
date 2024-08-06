@@ -1,10 +1,13 @@
 import { Card, CardContent } from '@/components/ui/card';
 import NumberTicker from './magicui/number-ticker';
+import { projects } from '@/data/projects';
 
 interface ExperienceProps {
   quantity: number;
   description: string;
 }
+
+const projectsLength = projects.length
 
 export const experiences: ExperienceProps[] = [
   {
@@ -12,11 +15,11 @@ export const experiences: ExperienceProps[] = [
     description: 'Anos de Experiência'
   },
   {
-    quantity: 22,
+    quantity: projectsLength,
     description: 'Projetos Construídos'
   },
   {
-    quantity: 8,
+    quantity: 4,
     description: 'Clientes pelo mundo'
   },
   {

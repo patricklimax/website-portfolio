@@ -224,4 +224,113 @@ export const projects: Project[] = [
       'Deploy na Vercel: O site está online e acessível através da Vercel, com deploy rápido e fácil, garantindo uma experiência de uso otimizada.',
     ],
   },
+  {
+    id: 161809,
+    name: 'Gerador de Senha',
+    descriptionCover:
+      'O Gerador de Senha é uma aplicação web simples e eficaz para criar senhas seguras e personalizadas.',
+    descriptionProject:
+      'O Gerador de Senha é uma aplicação web simples e eficaz para criar senhas seguras e personalizadas. Com ele, você pode gerar senhas aleatórias de diferentes comprimentos e com várias combinações de caracteres, como letras maiúsculas, minúsculas, números e símbolos. Desenvolvido com HTML, CSS e JavaScript, este projeto oferece uma interface intuitiva e responsiva para que qualquer pessoa possa gerar senhas fortes e seguras rapidamente.',
+    imgUrlCover:
+      'https://uploadthing-prod-sea1.s3.us-west-2.amazonaws.com/66ef9003-7cfb-4bc1-9138-2e3315313a02-8v22t3.png',
+    imgUrlTech:
+      'https://uploadthing-prod-sea1.s3.us-west-2.amazonaws.com/c4fc0f3f-3e9a-4f32-b181-cbd693b64a00-8v22t2.png',
+    imgUrlFunc:
+      'https://uploadthing-prod-sea1.s3.us-west-2.amazonaws.com/b55d566f-f2a4-436f-9b06-2b763b26fb2c-8v22t1.png',
+    technologies: [
+      'HTML5: Utilizado para estruturar o conteúdo da aplicação.',
+      'CSS3: Utilizado para estilizar a aplicação e criar layouts responsivos, utilizando Flexbox e Grid.',
+      'JavaScript: Implementação da lógica de geração de senhas e manipulação do DOM para interação do usuário.',
+      'Vercel: Plataforma usada para hospedar o projeto, garantindo deploy contínuo e acesso rápido.',
+    ],
+    functionalities: [
+      'Geração de Senhas Aleatórias: Crie senhas seguras com base em diferentes critérios definidos pelo usuário.',
+      'Opções de Personalização: Defina o comprimento da senha.',
+      'Escolha incluir ou excluir letras maiúsculas, minúsculas, números e símbolos.',
+      'Grau de segurança da senha: tenha uma senha: Muita Fraca, Fraca, Boa, Forte, Muito Forte.',
+      'Cópia para Área de Transferência: Copie a senha gerada diretamente para a área de transferência com um clique.',
+      'Design Simples e Intuitivo: Interface limpa e fácil de usar, focada na usabilidade e acessibilidade.',
+    ],
+  },
+  {
+    id: 166510,
+    name: 'Calculadora',
+    descriptionCover:
+      'Este projeto é uma calculadora simples e funcional desenvolvida com HTML, CSS e JavaScript puro.',
+    descriptionProject:
+      'Este projeto é uma calculadora simples e funcional desenvolvida com HTML, CSS e JavaScript puro. O objetivo é oferecer uma ferramenta básica para realizar operações matemáticas, com uma interface amigável e responsiva. Este projeto é ideal para quem deseja aprender mais sobre como construir uma calculadora do zero utilizando tecnologias web fundamentais.',
+    imgUrlCover:
+      'https://uploadthing-prod-sea1.s3.us-west-2.amazonaws.com/64938ba9-659e-4ade-8736-9271f6dfc4f7-hs136q.png',
+    imgUrlTech:
+      'https://uploadthing-prod-sea1.s3.us-west-2.amazonaws.com/341d17b3-6e1a-4ecd-900e-e7fd65d90c83-hs136r.png',
+    imgUrlFunc:
+      'https://uploadthing-prod-sea1.s3.us-west-2.amazonaws.com/1f78aa80-d1fe-42a9-8e32-c8453b2fd170-hs136s.png',
+    technologies: [
+      'HTML: Marca a estrutura do conteúdo da calculadora.',
+      'CSS: Estiliza a interface, garantindo que a calculadora seja visualmente agradável e funcional em diferentes dispositivos.',
+      'CSS Grid: Utilizado para criar o layout responsivo e organizado da calculadora.',
+      'JavaScript Puro: Manipula a lógica das operações matemáticas e a interação do usuário com a interface.',
+      'Vercel: Plataforma de deployment utilizada para hospedar a calculadora, permitindo que ela seja acessada online.',
+    ],
+    functionalities: [
+      'Operações Básicas: Realiza operações matemáticas simples como adição, subtração, multiplicação e divisão.',
+      'Interface Responsiva: A calculadora é projetada para funcionar bem em diferentes tamanhos de tela, desde desktops até dispositivos móveis.',
+      'Teclado Virtual: Botões que representam os dígitos e operadores matemáticos, facilitando a interação do usuário.',
+      'Feedback Visual: Destaques visuais ao pressionar botões, proporcionando uma experiência de uso intuitiva e agradável.',
+    ],
+  },
+  {
+    id: 180111,
+    name: 'Menu Pizza Cart',
+    descriptionCover:
+      'O Menu Pizza Cart é uma aplicação web simples que permite aos usuários navegar por um menu de pizzas, visualizar detalhes como preço, tamanho e quantidade, e adicionar pizzas ao carrinho de compras.',
+    descriptionProject:
+      'O Menu Pizza Cart é uma aplicação web simples que permite aos usuários navegar por um menu de pizzas, visualizar detalhes como preço, tamanho e quantidade, e adicionar pizzas ao carrinho de compras. A aplicação inclui funcionalidades interativas como a confirmação do produto via modal antes de adicionar ao carrinho, e a possibilidade de ajustar as quantidades de pizza no carrinho, seja aumentando ou removendo itens. O projeto foi desenvolvido com HTML, CSS e JavaScript puro, proporcionando uma experiência de usuário intuitiva e responsiva.',
+    imgUrlCover:
+      'https://uploadthing-prod-sea1.s3.us-west-2.amazonaws.com/cd580992-4914-497a-ae45-953f27dd59fd-ljhza0.png',
+    imgUrlTech:
+      'https://utfs.io/f/981f9ee8-d80d-4502-95c6-0127cf90444d-ljhz9y.png',
+    imgUrlFunc:
+      'https://uploadthing-prod-sea1.s3.us-west-2.amazonaws.com/83141fe7-1f5f-45d4-af55-43df4b2858c4-ljhz9z.png',
+    technologies: [
+      'HTML: Define a estrutura da aplicação, organizando o conteúdo e os elementos do menu e do carrinho.',
+      'CSS: Estiliza a interface do usuário, garantindo que o menu de pizzas seja atraente e fácil de usar.',
+      'CSS Grid: Utilizado para criar um layout organizado e responsivo, facilitando a disposição dos elementos na página.',
+      'JavaScript Puro: Implementa a lógica de interatividade, como o gerenciamento do carrinho, abertura de modais e atualização dinâmica das quantidades.',
+      'Vercel: Plataforma de deployment utilizada para hospedar a aplicação, permitindo que ela seja acessada online.',
+    ],
+    functionalities: [
+      'Visualização do Menu: Exibe uma lista de pizzas com detalhes como preço, tamanho disponível e opção para escolher a quantidade.',
+      'Modal de Confirmação: Ao adicionar uma pizza ao carrinho, um modal é aberto para confirmar a seleção, garantindo que o usuário tenha certeza da escolha antes de prosseguir.',
+      'Gerenciamento do Carrinho: No carrinho, os usuários podem ajustar as quantidades de cada pizza, adicionando mais unidades ou removendo-as conforme necessário.',
+      'Atualização Dinâmica: As alterações no carrinho são refletidas em tempo real, proporcionando uma experiência de compra fluida e sem interrupções.',
+      'Interface Responsiva: O layout e os elementos da aplicação são ajustados automaticamente para diferentes tamanhos de tela, garantindo uma boa experiência de uso em dispositivos móveis e desktops.',
+    ],
+  },
+  {
+    id: 190012,
+    name: 'Relógio Análogico Digital',
+    descriptionCover:
+      'Este projeto é um relógio que combina uma exibição analógica e digital, desenvolvido utilizando HTML, CSS e JavaScript puro.',
+    descriptionProject:
+      'Este projeto é um relógio que combina uma exibição analógica e digital, desenvolvido utilizando HTML, CSS e JavaScript puro. A interface elegante e responsiva permite que os usuários visualizem o tempo de duas maneiras distintas, simulando um relógio clássico com ponteiros ao lado de uma exibição digital. Este projeto é uma excelente demonstração de como usar tecnologias web fundamentais para criar componentes interativos e visualmente atraentes.',
+    imgUrlCover:
+      'https://utfs.io/f/bee23d3b-0655-4c0f-b561-85d92c3a4e3a-mg8pb1.png',
+    imgUrlTech:
+      'https://utfs.io/f/bee23d3b-0655-4c0f-b561-85d92c3a4e3a-mg8pb1.png',
+    imgUrlFunc:
+      'https://uploadthing-prod-sea1.s3.us-west-2.amazonaws.com/aaddd1ff-f58c-4547-84e4-f52db66e1d0f-mg8pb0.png',
+    technologies: [
+      'HTML: Estrutura a marcação do relógio, definindo os elementos da interface.',
+      'CSS: Estiliza o relógio, criando um design atraente e garantindo que a interface seja responsiva.',
+      'JavaScript Puro: Implementa a lógica que faz o relógio funcionar em tempo real, atualizando tanto os ponteiros quanto a exibição digital com base na hora atual.',
+      'Vercel: Plataforma de deployment utilizada para hospedar o relógio, permitindo que ele seja acessado online.',
+    ],
+    functionalities: [
+      'Relógio Analógico: Exibe a hora atual com ponteiros para horas, minutos e segundos, simulando um relógio físico.',
+      'Relógio Digital: Mostra a hora atual em formato digital (HH:MM), oferecendo uma visualização alternativa do tempo.',
+      'Atualização em Tempo Real: O relógio é atualizado automaticamente em tempo real, garantindo que as horas exibidas estejam sempre corretas.',
+      'Interface Responsiva: O layout do relógio se adapta a diferentes tamanhos de tela, proporcionando uma boa experiência de uso em dispositivos móveis e desktops.',
+    ],
+  },
 ];
