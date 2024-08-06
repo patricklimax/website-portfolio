@@ -16,13 +16,15 @@ const ProjectCard = () => {
         </CardTitle>
 
         <div className='w-full h-[150px]'>
-          <Image
-            src={recentProject.imgUrlCover}
-            width={248}
-            height={100}
-            alt={`Image do projeto ${recentProject.name}`}
-            className='border rounded-md shadow-md shadow-background mx-auto h-[150px] w-8/12'
-          />
+          <Link href={`/projects/${recentProject.id}`}>
+            <Image
+              src={recentProject.imgUrlCover}
+              width={248}
+              height={100}
+              alt={`Image do projeto ${recentProject.name}`}
+              className='border rounded-md shadow-md shadow-background mx-auto h-[150px] w-8/12'
+            />
+          </Link>
         </div>
 
         <div className='w-full flex items-center justify-between text-muted-foreground '>
