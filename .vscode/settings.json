@@ -1,0 +1,7 @@
+{
+  "editor.defaultFormatter": "biomejs.biome",
+  "editor.fontSize": 12.2,
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  }
+}

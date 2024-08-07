@@ -8,28 +8,27 @@ import TechToolsCard from './components/card-techs';
 import TitleDeveloper from './components/card-title';
 
 export default function Home() {
-  return (
-    <section
-      className='mx-auto max-w-5xl grid grid-cols-1 gap-4 md:grid md:grid-cols-12 md:grid-rows-12 md:h-[696px]'>
-      <TitleDeveloper />
+	return (
+		<section className="mx-auto max-w-5xl grid grid-cols-1 gap-4 md:grid md:grid-cols-12 md:grid-rows-12 md:h-[696px]">
+			<TitleDeveloper />
 
-      <AvatarCard />
+			<AvatarCard />
 
-      <ProjectCard />
+			<ProjectCard />
 
-      <StacksCard />
+			<StacksCard />
 
-      <TechToolsCard />
+			<TechToolsCard />
 
-      <ServicesCard />
+			<ServicesCard />
 
-      <div className='md:col-start-10 md:col-end-13 md:row-start-2 md:row-end-10'>
-        <ExperienceCard />
-      </div>
+			<div className="md:col-start-10 md:col-end-13 md:row-start-2 md:row-end-10">
+				<ExperienceCard />
+			</div>
 
-      <div className='md:col-start-7 md:col-end-13 md:row-start-10 md:row-end-13'>
-        <ContactCard />
-     </div>
-    </section>
-  );
+			<div className="md:col-start-7 md:col-end-13 md:row-start-10 md:row-end-13">
+				<ContactCard />
+			</div>
+		</section>
+	);
 }
