@@ -2,10 +2,10 @@ import ContactCard from '@/components/contact';
 import { ExperienceItem, experiences } from '@/components/experience';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardTitle } from '@/components/ui/card';
-import Link from 'next/link';
 import { projects } from '@/data/projects';
 import { ChevronsRightIcon, MoveLeftIcon } from 'lucide-react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 interface ProfessionalDetailsPageProps {
 	params: {
@@ -19,10 +19,8 @@ const ProjectDetailsPage = ({ params }: ProfessionalDetailsPageProps) => {
 		return null;
 	}
 
-	const projeto = projects.filter((project) => project.id === Number(params.id));
-
+	const projeto = projects.filter(project => project.id === Number(params.id));
 	const projetoItem = projeto[0];
-
 	const funcs = projetoItem.functionalities;
 	const techs = projetoItem.technologies;
 
@@ -32,51 +30,59 @@ const ProjectDetailsPage = ({ params }: ProfessionalDetailsPageProps) => {
 	}
 
 	return (
-		<section className="mx-auto max-w-5xl">
-			<Link href={'/'} className="flex mb-8">
-				<Button className="bg-primary hover:bg-primary/85 ">
+		<section className='mx-auto max-w-5xl'>
+			<Link
+				href={'/'}
+				className='mb-8 flex'>
+				<Button className='bg-primary hover:bg-primary/85'>
 					<MoveLeftIcon />
-					<span className="ml-2 text-base font-bold">Home</span>
+					<span className='ml-2 text-base font-bold'>Home</span>
 				</Button>
 			</Link>
 
-			<div className="w-full">
-				<div className="w-full flex flex-col md:flex-row items-stretch gap-6 mb-6">
-					<div className="w-full md:w-1/2 border rounded-xl">
+			<div className='w-full'>
+				<div className='mb-6 flex w-full flex-col items-stretch gap-6 md:flex-row'>
+					<div className='w-full rounded-xl border md:w-1/2'>
 						<Image
 							src={projetoItem.imgUrlCover}
 							alt={projetoItem.name}
 							width={702}
 							height={450}
-							className="w-full rounded-xl object-cover h-[180px] md:h-[304px]"
+							className='h-[180px] w-full rounded-xl object-cover md:h-[304px]'
 						/>
 					</div>
 
-					<div className="w-full md:w-1/2 flex flex-col justify-between gap-3 rounded-xl border p-6">
-						<p className="text-xl md:text-3xl font-semibold text-primary">
-							<span className="text-foreground">#</span>
+					<div className='flex w-full flex-col justify-between gap-3 rounded-xl border p-6 md:w-1/2'>
+						<p className='text-xl font-semibold text-primary md:text-3xl'>
+							<span className='text-foreground'>#</span>
 							{projetoItem.name}
 						</p>
 
-						<p className="text-sm font-light text-muted-foreground">
+						<p className='text-sm font-light text-muted-foreground'>
 							{projetoItem.descriptionProject}
 						</p>
 
-						<div className="self-end flex items-center gap-10 mt-2">
-							<Button variant={'outline'} size={'sm'} className="text-xs">
+						<div className='mt-2 flex items-center gap-10 self-end'>
+							<Button
+								variant={'outline'}
+								size={'sm'}
+								className='text-xs'>
 								Ver Online
 							</Button>
-							<Button variant={'outline'} size={'sm'} className="text-xs">
+							<Button
+								variant={'outline'}
+								size={'sm'}
+								className='text-xs'>
 								Repositório
 							</Button>
 						</div>
 					</div>
 				</div>
 
-				<div className="flex flex-col md:flex-row items-stretch gap-6">
-					<Card className="w-full md:w-1/2">
+				<div className='flex flex-col items-stretch gap-6 md:flex-row'>
+					<Card className='w-full md:w-1/2'>
 						<CardContent>
-							<CardTitle className="text-lg font-medium text-start w-full uppercase text-primary">
+							<CardTitle className='w-full text-start text-lg font-medium uppercase text-primary'>
 								Funcionalidades da Aplicação
 							</CardTitle>
 
@@ -86,15 +92,17 @@ const ProjectDetailsPage = ({ params }: ProfessionalDetailsPageProps) => {
 									alt={projetoItem.name}
 									width={702}
 									height={450}
-									className="w-[492px] rounded-md object-cover h-[180px] md:h-[304px]"
+									className='h-[180px] w-[492px] rounded-md object-cover md:h-[304px]'
 								/>
 							</div>
 
-							<div className="ml-2">
-								<ul className="flex flex-col gap-2 text-muted-foreground">
-									{funcs.map((func) => (
-										<li className="flex gap-2 text-sm font-light" key={projetoItem.id}>
-											<span className="text-primary">
+							<div className='ml-2'>
+								<ul className='flex flex-col gap-2 text-muted-foreground'>
+									{funcs.map(func => (
+										<li
+											className='flex gap-2 text-sm font-light'
+											key={projetoItem.id}>
+											<span className='text-primary'>
 												<ChevronsRightIcon />
 											</span>
 											<span>{func}</span>
@@ -105,9 +113,9 @@ const ProjectDetailsPage = ({ params }: ProfessionalDetailsPageProps) => {
 						</CardContent>
 					</Card>
 
-					<Card className="w-full md:w-1/2">
+					<Card className='w-full md:w-1/2'>
 						<CardContent>
-							<CardTitle className="text-lg font-medium text-start w-full uppercase text-primary">
+							<CardTitle className='w-full text-start text-lg font-medium uppercase text-primary'>
 								Tecnologias usadas no Projeto
 							</CardTitle>
 
@@ -117,15 +125,17 @@ const ProjectDetailsPage = ({ params }: ProfessionalDetailsPageProps) => {
 									alt={projetoItem.name}
 									width={702}
 									height={450}
-									className="w-[492px] rounded-md object-cover h-[180px] md:h-[304px]"
+									className='h-[180px] w-[492px] rounded-md object-cover md:h-[304px]'
 								/>
 							</div>
 
-							<div className="ml-2">
-								<ul className="flex flex-col gap-2 text-muted-foreground">
-									{techs.map((tech) => (
-										<li className="flex gap-2 text-sm font-light" key={projetoItem.id}>
-											<span className="text-primary">
+							<div className='ml-2'>
+								<ul className='flex flex-col gap-2 text-muted-foreground'>
+									{techs.map(tech => (
+										<li
+											className='flex gap-2 text-sm font-light'
+											key={projetoItem.id}>
+											<span className='text-primary'>
 												<ChevronsRightIcon />
 											</span>
 											<span>{tech}</span>
@@ -138,11 +148,11 @@ const ProjectDetailsPage = ({ params }: ProfessionalDetailsPageProps) => {
 				</div>
 			</div>
 
-			<div className="w-full flex flex-col md:flex-row gap-4 mt-10">
-				<div className="md:flex-1">
-					<Card className="h-full">
-						<CardContent className="grid grid-cols-2 md:grid-cols-4">
-							{experiences.map((experience) => (
+			<div className='mt-10 flex w-full flex-col gap-4 md:flex-row'>
+				<div className='md:flex-1'>
+					<Card className='h-full'>
+						<CardContent className='grid grid-cols-2 md:grid-cols-4'>
+							{experiences.map(experience => (
 								<ExperienceItem
 									key={experience.description}
 									quantity={experience.quantity}
@@ -153,7 +163,7 @@ const ProjectDetailsPage = ({ params }: ProfessionalDetailsPageProps) => {
 					</Card>
 				</div>
 
-				<div className="md:flex-1">
+				<div className='md:flex-1'>
 					<ContactCard />
 				</div>
 			</div>

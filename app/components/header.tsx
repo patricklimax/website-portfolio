@@ -1,22 +1,24 @@
-import { Logotipo } from './logotipo';
-import { ToggleModeTheme } from './toggle-theme';
-import { Card, CardContent } from './ui/card';
-import { Button } from './ui/button';
-import { Sheet, SheetClose, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from './ui/sheet';
 import { TextIcon } from 'lucide-react';
-import { Separator } from './ui/separator';
+import { Logotipo } from './logotipo';
 import { NavBarDesktop, NavBarMobile } from './navbar';
+import { ToggleModeTheme } from './toggle-theme';
+import { Button } from './ui/button';
+import { Card, CardContent } from './ui/card';
+import { Separator } from './ui/separator';
+import { Sheet, SheetClose, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from './ui/sheet';
 
 const Header = () => {
 	return (
-		<header className="mx-auto max-w-5xl mb-8">
-			<Card className="mx-auto max-w-5xl">
-				<CardContent className="w-full p-4 flex-row justify-between">
-					<div className="flex items-center gap-4">
-						<div className="md:hidden">
+		<header className='mx-auto mb-8 max-w-5xl'>
+			<Card className='mx-auto max-w-5xl'>
+				<CardContent className='w-full flex-row justify-between p-4'>
+					<div className='flex items-center gap-4'>
+						<div className='md:hidden'>
 							<Sheet>
 								<SheetTrigger asChild>
-									<Button size={'icon'} variant={'outline'}>
+									<Button
+										size={'icon'}
+										variant={'outline'}>
 										<TextIcon />
 									</Button>
 								</SheetTrigger>
@@ -28,7 +30,7 @@ const Header = () => {
 											</SheetClose>
 										</SheetTitle>
 
-										<div className="py-4">
+										<div className='py-4'>
 											<Separator />
 										</div>
 
@@ -44,7 +46,7 @@ const Header = () => {
 						</div>
 					</div>
 
-					<div className="hidden md:block">
+					<div className='hidden md:block'>
 						<NavBarDesktop />
 					</div>
 

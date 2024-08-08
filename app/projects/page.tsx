@@ -13,39 +13,46 @@ const projectOrderIDdesc = projects
 
 const ProjectsPage = () => {
 	return (
-		<section className="mx-auto max-w-5xl">
-			<Link href={'/'} className="flex mb-8 w-fit">
-				<Button className="bg-primary hover:bg-primary/85 ">
+		<section className='mx-auto max-w-5xl'>
+			<Link
+				href={'/'}
+				className='mb-8 flex w-fit'>
+				<Button className='bg-primary hover:bg-primary/85'>
 					<MoveLeftIcon />
-					<span className="ml-2 text-base font-bold">Home</span>
+					<span className='ml-2 text-base font-bold'>Home</span>
 				</Button>
 			</Link>
 
-			<div className="w-full">
-				<div className="w-full grid grid-cols-1 md:grid-cols-2 gap-4">
-					{projectOrderIDdesc.map((project) => (
+			<div className='w-full'>
+				<div className='grid w-full grid-cols-1 gap-4 md:grid-cols-2'>
+					{projectOrderIDdesc.map(project => (
 						<div
 							key={project.id}
-							className="w-full md:h-auto border rounded-md group/item relative">
-							<div className="hidden md:block group/edit w-full h-0 absolute bottom-0 group-hover/item:h-full bg-gradient-to-b from-background to-background/75 transition-all duration-500 rounded-md" />
+							className='group/item relative w-full rounded-md border md:h-auto'>
+							<div className='group/edit absolute bottom-0 hidden h-0 w-full rounded-md bg-gradient-to-b from-background to-background/75 transition-all duration-500 group-hover/item:h-full md:block' />
 
 							<Image
 								src={project.imgUrlCover}
-								className="rounded-md object-cover w-full md:h-[220px]"
+								className='w-full rounded-md object-cover md:h-[220px]'
 								alt={project.name}
 								width={702}
 								height={450}
 							/>
 
-							<div className="md:absolute z-40 md:bottom-0 p-4 md:p-4 group/edit md:opacity-0 transition-all duration-700 group-hover/item:opacity-100 flex flex-col md:justify-between rounded-md h-full">
-								<p className="text-lg md:text-2xl text-primary font-semibold">{project.name}</p>
+							<div className='group/edit z-40 flex h-full flex-col rounded-md p-4 transition-all duration-700 group-hover/item:opacity-100 md:absolute md:bottom-0 md:justify-between md:p-4 md:opacity-0'>
+								<p className='text-lg font-semibold text-primary md:text-2xl'>{project.name}</p>
 
-								<p className="text-sm font-medium  rounded-md mt-2 mb:mt-0 md:px-10 shadow-md">
+								<p className='mb:mt-0 mt-2 rounded-md text-sm font-medium shadow-md md:px-10'>
 									{project.descriptionCover}
 								</p>
 
-								<Link href={`/projects/${project.id}`} className="self-end flex p-0 w-fit mt-2">
-									<Button variant={'outline'} className="px-2 py-1" size={'sm'}>
+								<Link
+									href={`/projects/${project.id}`}
+									className='mt-2 flex w-fit self-end p-0'>
+									<Button
+										variant={'outline'}
+										className='px-2 py-1'
+										size={'sm'}>
 										Mais detalhes
 									</Button>
 								</Link>
@@ -54,11 +61,11 @@ const ProjectsPage = () => {
 					))}
 				</div>
 
-				<div className="w-full flex flex-col md:flex-row gap-4 mt-10">
-					<div className="md:flex-1">
-						<Card className="h-full">
-							<CardContent className="grid grid-cols-2 md:grid-cols-4">
-								{experiences.map((experience) => (
+				<div className='mt-10 flex w-full flex-col gap-4 md:flex-row'>
+					<div className='md:flex-1'>
+						<Card className='h-full'>
+							<CardContent className='grid grid-cols-2 md:grid-cols-4'>
+								{experiences.map(experience => (
 									<ExperienceItem
 										key={experience.description}
 										quantity={experience.quantity}
@@ -69,7 +76,7 @@ const ProjectsPage = () => {
 						</Card>
 					</div>
 
-					<div className="md:flex-1">
+					<div className='md:flex-1'>
 						<ContactCard />
 					</div>
 				</div>

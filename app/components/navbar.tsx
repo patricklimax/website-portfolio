@@ -1,11 +1,11 @@
 'use client';
 
+import clsx from 'clsx';
+import { BriefcaseBusinessIcon, HomeIcon, LayoutDashboardIcon, UserIcon } from 'lucide-react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import clsx from 'clsx';
-import { Button } from './ui/button';
 import type { ElementType } from 'react';
-import { BriefcaseBusinessIcon, HomeIcon, LayoutDashboardIcon, UserIcon } from 'lucide-react';
+import { Button } from './ui/button';
 import { SheetClose } from './ui/sheet';
 
 interface LinkNav {
@@ -18,42 +18,45 @@ export const links: LinkNav[] = [
 	{
 		name: 'Home',
 		href: '/',
-		icon: HomeIcon,
+		icon: HomeIcon
 	},
 	{
 		name: 'Sobre',
 		href: '/about',
-		icon: UserIcon,
+		icon: UserIcon
 	},
 	{
 		name: 'Serviços',
 		href: '/services',
-		icon: BriefcaseBusinessIcon,
+		icon: BriefcaseBusinessIcon
 	},
 	{
 		name: 'Projetos',
 		href: '/projects',
-		icon: LayoutDashboardIcon,
-	},
+		icon: LayoutDashboardIcon
+	}
 ];
 
 export const NavBarMobile = () => {
 	const pathname = usePathname();
 	return (
 		<>
-			<nav className="flex flex-col gap-4 ">
-				{links.map((link) => {
+			<nav className='flex flex-col gap-4'>
+				{links.map(link => {
 					const LinkIcon = link.icon;
 					return (
-						<Link className="w-full" key={link.name} href={link.href}>
+						<Link
+							className='w-full'
+							key={link.name}
+							href={link.href}>
 							<SheetClose asChild>
 								<Button
 									variant={'outline'}
 									className={clsx(
-										'w-full border-none flex gap-2 items-center justify-start font-bold text-foreground',
-										{ 'text-primary border-primary': pathname === link.href },
+										'flex w-full items-center justify-start gap-2 border-none font-bold text-foreground',
+										{ 'border-primary text-primary': pathname === link.href }
 									)}>
-									<LinkIcon className="w-4" />
+									<LinkIcon className='w-4' />
 									<p>{link.name}</p>
 								</Button>
 							</SheetClose>
@@ -69,18 +72,21 @@ export const NavBarDesktop = () => {
 	const pathname = usePathname();
 	return (
 		<>
-			<nav className="flex items-center gap-4">
-				{links.map((link) => {
+			<nav className='flex items-center gap-4'>
+				{links.map(link => {
 					const LinkIcon = link.icon;
 					return (
-						<Link className="w-full" key={link.name} href={link.href}>
+						<Link
+							className='w-full'
+							key={link.name}
+							href={link.href}>
 							<Button
 								variant={'outline'}
 								className={clsx(
-									'w-full border-none flex gap-2 items-center justify-start font-bold text-foreground',
-									{ 'text-primary border-primary': pathname === link.href },
+									'flex w-full items-center justify-start gap-2 border-none font-bold text-foreground',
+									{ 'border-primary text-primary': pathname === link.href }
 								)}>
-								<LinkIcon className="w-4" />
+								<LinkIcon className='w-4' />
 								<p>{link.name}</p>
 							</Button>
 						</Link>

@@ -1,6 +1,6 @@
+import Footer from '@/components/footer';
+import Header from '@/components/header';
 import type { Metadata } from 'next';
-import Footer from './components/footer';
-import Header from './components/header';
 import './globals.css';
 import { manropeFont } from './helpers/fonts';
 import { ThemeProvider } from './providers/theme-provider';

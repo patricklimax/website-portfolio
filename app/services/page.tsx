@@ -8,37 +8,42 @@ import Link from 'next/link';
 
 const ServicesPage = () => {
 	return (
-		<section className="mx-auto max-w-5xl">
-			<Link href={'/'} className="flex mb-8">
-				<Button className="bg-primary hover:bg-primary/85 ">
+		<section className='mx-auto max-w-5xl'>
+			<Link
+				href={'/'}
+				className='mb-8 flex'>
+				<Button className='bg-primary hover:bg-primary/85'>
 					<MoveLeftIcon />
-					<span className="ml-2 text-base font-bold">Home</span>
+					<span className='ml-2 text-base font-bold'>Home</span>
 				</Button>
 			</Link>
 
-			<div className="w-full grid grid-cols-1 gap-4 md:grid-cols-2">
-				{services.map((service) => {
+			<div className='grid w-full grid-cols-1 gap-4 md:grid-cols-2'>
+				{services.map(service => {
 					const ServiceIcon = service.icon;
 					const ColorIcon = service.color;
 					return (
 						<Card key={service.name}>
 							<CardContent>
-								<div className="w-full flex items-center gap-4">
-									<CardTitle className="flex-3 text-lg font-medium text-center w-full flex flex-col text-primary">
+								<div className='flex w-full items-center gap-4'>
+									<CardTitle className='flex-3 flex w-full flex-col text-center text-lg font-medium text-primary'>
 										{service.name}
 									</CardTitle>
 
-									<div className="flex-1 flex items-center justify-center">
+									<div className='flex flex-1 items-center justify-center'>
 										<span
-											className={`rounded-full border place-items-start w-fit p-4 ${ColorIcon}`}>
-											<ServiceIcon size={35} className="stroke-1" />
+											className={`w-fit place-items-start rounded-full border p-4 ${ColorIcon}`}>
+											<ServiceIcon
+												size={35}
+												className='stroke-1'
+											/>
 										</span>
 									</div>
 								</div>
 
-								<div className="text-sm font-light flex flex-col items-center gap-2">
-									<p className="">{service.description}</p>
-									<p className="text-muted-foreground">{service.moreInfo}</p>
+								<div className='flex flex-col items-center gap-2 text-sm font-light'>
+									<p className=''>{service.description}</p>
+									<p className='text-muted-foreground'>{service.moreInfo}</p>
 								</div>
 							</CardContent>
 						</Card>
@@ -46,9 +51,9 @@ const ServicesPage = () => {
 				})}
 
 				<div>
-					<Card className="h-full">
-						<CardContent className="grid grid-cols-2 md:grid-cols-4 ">
-							{experiences.map((experience) => (
+					<Card className='h-full'>
+						<CardContent className='grid grid-cols-2 md:grid-cols-4'>
+							{experiences.map(experience => (
 								<ExperienceItem
 									key={experience.description}
 									quantity={experience.quantity}

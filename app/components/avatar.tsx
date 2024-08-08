@@ -2,15 +2,15 @@ import Image from 'next/image';
 
 const Avatar = () => {
 	return (
-		<div className="border relative w-fit my-2">
-			<div className="w-2.5 h-2.5 bg-primary absolute -left-[5px] -top-[5px]" />
-			<div className="w-2.5 h-2.5 bg-primary absolute -right-[5px] -top-[5px]" />
-			<div className="w-2.5 h-2.5 bg-primary absolute -right-[5px] -bottom-[5px]" />
-			<div className="w-2.5 h-2.5 bg-primary absolute -left-[5px] -bottom-[5px]" />
+		<div className='relative my-2 w-fit border'>
+			<div className='absolute -left-[5px] -top-[5px] h-2.5 w-2.5 bg-primary' />
+			<div className='absolute -right-[5px] -top-[5px] h-2.5 w-2.5 bg-primary' />
+			<div className='absolute -bottom-[5px] -right-[5px] h-2.5 w-2.5 bg-primary' />
+			<div className='absolute -bottom-[5px] -left-[5px] h-2.5 w-2.5 bg-primary' />
 			<Image
-				className="bg-primary-foreground rounded-full"
+				className='rounded-full bg-primary-foreground'
 				src={'avatar.svg'}
-				alt="Logo Developer"
+				alt='Logo Developer'
 				width={188}
 				height={188}
 			/>

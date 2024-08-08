@@ -31,10 +31,9 @@
     --chart-4: 43 74% 66%;
     --chart-5: 27 87% 67%;
 
-
     --confirmed: 138 76.5% 96.7%;
     --confirmed-foreground: 142 58.2% 35%;
-    
+
     --attention: 55 100% 95%;
     --attention-foreground: 45 80% 50%;
 
@@ -77,7 +76,7 @@
 
     --information: 224 76.3% 48%;
     --information-foreground: 214 100% 88.9%;
-  } 
+  }
 }
 
 @layer base {
