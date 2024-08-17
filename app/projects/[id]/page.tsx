@@ -64,12 +64,14 @@ const ProjectDetailsPage = ({ params }: ProfessionalDetailsPageProps) => {
 
 						<div className='mt-2 flex items-center gap-10 self-end'>
 							<Button
+								disabled
 								variant={'outline'}
 								size={'sm'}
 								className='text-xs'>
 								Ver Online
 							</Button>
 							<Button
+								disabled
 								variant={'outline'}
 								size={'sm'}
 								className='text-xs'>
