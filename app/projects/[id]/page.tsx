@@ -63,20 +63,24 @@ const ProjectDetailsPage = ({ params }: ProfessionalDetailsPageProps) => {
 						</p>
 
 						<div className='mt-2 flex items-center gap-10 self-end'>
-							<Button
-								disabled
-								variant={'outline'}
-								size={'sm'}
-								className='text-xs'>
-								Ver Online
-							</Button>
-							<Button
-								disabled
-								variant={'outline'}
-								size={'sm'}
-								className='text-xs'>
-								Repositório
-							</Button>
+							<Link href={projetoItem.onlineURL ? projetoItem.onlineURL : ''}>
+								<Button
+									disabled={!projetoItem.onlineURL && true}
+									variant={'outline'}
+									size={'sm'}
+									className='text-xs'>
+									Ver Online
+								</Button>
+							</Link>
+							<Link href={projetoItem.githubURL}>
+								<Button
+									disabled={!projetoItem.githubURL && true}
+									variant={'outline'}
+									size={'sm'}
+									className='text-xs'>
+									Repositório
+								</Button>
+							</Link>
 						</div>
 					</div>
 				</div>
