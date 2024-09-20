@@ -4,6 +4,7 @@ export const projects: Project[] = [
   {
     id: 103901,
     name: "Awax Clone",
+    class: "others",
     descriptionCover:
       "Este projeto é um clone do site Awax, desenvolvido como parte dos meus estudos em desenvolvimento web.",
     descriptionProject:
@@ -30,6 +31,7 @@ export const projects: Project[] = [
   {
     id: 105302,
     name: "Patrick FirstSite",
+    class: "others",
     descriptionCover:
       'O projeto "PATRICKFIRST" é um site desenvolvido como parte dos meus estudos em desenvolvimento web, focado em práticas de HTML, CSS, JavaScript e animações.',
     descriptionProject:
@@ -59,6 +61,7 @@ export const projects: Project[] = [
   {
     id: 109303,
     name: "Site Meelink",
+    class: "principal",
     descriptionCover:
       'O projeto "Site Meelink" é uma recriação de um site fictício, desenvolvida com o intuito de praticar habilidades em HTML, CSS e Grid Layout.',
     descriptionProject:
@@ -85,6 +88,7 @@ export const projects: Project[] = [
   {
     id: 110104,
     name: "Starbucks Clone",
+    class: "principal",
     descriptionCover:
       "O Clone do Starbucks é um projeto de front-end que recria a interface do site da Starbucks, utilizando apenas HTML e CSS.",
     descriptionProject:
@@ -111,6 +115,7 @@ export const projects: Project[] = [
   {
     id: 111405,
     name: "Design Clone",
+    class: "principal",
     descriptionCover:
       'O projeto "Design Clone" é uma recriação de um site fictício, desenvolvido durante meus estudos em desenvolvimento web.',
     descriptionProject:
@@ -139,6 +144,7 @@ export const projects: Project[] = [
   {
     id: 155006,
     name: "Hover Page - Clone",
+    class: "principal",
     descriptionCover:
       '"HoverPage" é um projeto de estudo em desenvolvimento web, criado para praticar e aprofundar conhecimentos em HTML, CSS, Flexbox, e JavaScript.',
     descriptionProject:
@@ -167,6 +173,7 @@ export const projects: Project[] = [
   {
     id: 159607,
     name: "Site com Tema de Cores - Clone",
+    class: "principal",
     descriptionCover:
       '"Site com Tema de Cores" é um projeto de site de landing page desenvolvido como parte dos meus estudos em desenvolvimento web.',
     descriptionProject:
@@ -197,6 +204,7 @@ export const projects: Project[] = [
   {
     id: 160908,
     name: "Página Halloween - Clone",
+    class: "principal",
     descriptionCover:
       '"HALLOPAGE" é um projeto de landing page desenvolvido como parte dos meus estudos em desenvolvimento web.',
     descriptionProject:
@@ -227,6 +235,7 @@ export const projects: Project[] = [
   {
     id: 161809,
     name: "Gerador de Senha",
+    class: "others",
     descriptionCover:
       "O Gerador de Senha é uma aplicação web simples e eficaz para criar senhas seguras e personalizadas.",
     descriptionProject:
@@ -255,6 +264,7 @@ export const projects: Project[] = [
   {
     id: 166510,
     name: "Calculadora",
+    class: "others",
     descriptionCover:
       "Este projeto é uma calculadora simples e funcional desenvolvida com HTML, CSS e JavaScript puro.",
     descriptionProject:
@@ -282,6 +292,7 @@ export const projects: Project[] = [
   {
     id: 180111,
     name: "Menu Pizza Cart",
+    class: "others",
     descriptionCover:
       "O Menu Pizza Cart é uma aplicação web simples que permite aos usuários navegar por um menu de pizzas, visualizar detalhes como preço, tamanho e quantidade, e adicionar pizzas ao carrinho de compras.",
     descriptionProject:
@@ -310,6 +321,7 @@ export const projects: Project[] = [
   {
     id: 190012,
     name: "Relógio Análogico Digital",
+    class: "others",
     descriptionCover:
       "Este projeto é um relógio que combina uma exibição analógica e digital, desenvolvido utilizando HTML, CSS e JavaScript puro.",
     descriptionProject:
