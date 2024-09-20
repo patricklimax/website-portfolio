@@ -9,4 +9,6 @@ export interface Project {
   imgUrlFunc: string;
   technologies: string[];
   functionalities: string[];
+  githubURL: string;
+  onlineURL?: string;
 }
