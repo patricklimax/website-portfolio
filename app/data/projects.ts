@@ -232,11 +232,11 @@ export const projects: Project[] = [
     descriptionProject:
       "O Gerador de Senha é uma aplicação web simples e eficaz para criar senhas seguras e personalizadas. Com ele, você pode gerar senhas aleatórias de diferentes comprimentos e com várias combinações de caracteres, como letras maiúsculas, minúsculas, números e símbolos. Desenvolvido com HTML, CSS e JavaScript, este projeto oferece uma interface intuitiva e responsiva para que qualquer pessoa possa gerar senhas fortes e seguras rapidamente.",
     imgUrlCover:
-      "https://uploadthing-prod-sea1.s3.us-west-2.amazonaws.com/a5fd20d8-983e-42f1-acef-7b7af5ec4c44-fcleyy.png",
+      "https://uploadthing-prod-sea1.s3.us-west-2.amazonaws.com/e878e35c-49c7-4e57-843e-5f152ee378db-fcleyy.png",
     imgUrlTech:
-      "https://uploadthing-prod-sea1.s3.us-west-2.amazonaws.com/ecf8c7d8-c2ca-4903-bf2b-7a4a44d0a7d4-fcleyw.png",
+      "https://uploadthing-prod-sea1.s3.us-west-2.amazonaws.com/652eb882-1c2a-4eb6-98ac-be1e986fceaf-fcleyx.png",
     imgUrlFunc:
-      "https://uploadthing-prod-sea1.s3.us-west-2.amazonaws.com/875c2f4b-379a-4b3b-ab67-14b1f14af8a2-fcleyx.png",
+      "https://uploadthing-prod-sea1.s3.us-west-2.amazonaws.com/8041bf6e-7528-4e6c-ac10-232f8dbc571c-fcleyw.png",
     technologies: [
       "HTML5: Utilizado para estruturar o conteúdo da aplicação.",
       "CSS3: Utilizado para estilizar a aplicação e criar layouts responsivos, utilizando Flexbox e Grid.",
