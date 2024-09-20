@@ -21,6 +21,8 @@ export const projects: Project[] = [
       "Flexbox: Implementado para gerenciar o layout de forma eficiente, garantindo uma distribuição adequada dos elementos na página.",
       "Vercel: Plataforma utilizada para o deploy e hospedagem do projeto.",
     ],
+    githubURL: "https://github.com/patricklimax/html-css-js-site-awax",
+    onlineURL: "",
     functionalities: [
       "Design Responsivo: O site é totalmente responsivo, adaptando-se a diferentes tamanhos de tela e dispositivos.",
       "Clonagem de Layout: Replicação fiel do layout original do site Awax, incluindo elementos visuais como cabeçalhos, seções de conteúdo e rodapés.",
@@ -49,6 +51,9 @@ export const projects: Project[] = [
       "JavaScript: Implementado para adicionar interatividade, como o menu animado e a rolagem suave na navegação.",
       "Vercel: Plataforma utilizada para o deploy e hospedagem do site, garantindo fácil acesso e distribuição.",
     ],
+    githubURL:
+      "https://github.com/patricklimax/html-css-js-site-patricklimax-first",
+    onlineURL: "",
     functionalities: [
       "Design Responsivo: O site adapta-se perfeitamente a diferentes tamanhos de tela e dispositivos, proporcionando uma experiência de usuário consistente.",
       "Layout com Flexbox: Organização eficiente dos elementos da página utilizando Flexbox, garantindo um layout flexível e harmonioso.",
@@ -78,6 +83,8 @@ export const projects: Project[] = [
       "Grid Layout: Ferramenta principal para criar o layout do site, permitindo uma organização eficiente dos elementos na página.",
       "Vercel: Utilizado para o deploy e hospedagem do site, garantindo uma entrega rápida e fácil acesso ao projeto.",
     ],
+    githubURL: "https://github.com/patricklimax/html-css-js-site-meelink",
+    onlineURL: "",
     functionalities: [
       "Design Responsivo: O site é projetado para ser completamente responsivo, adaptando-se a diferentes resoluções de tela e dispositivos.",
       "Layout com CSS Grid: Implementação de um layout avançado utilizando CSS Grid, garantindo uma disposição flexível e ordenada dos elementos.",
@@ -105,6 +112,9 @@ export const projects: Project[] = [
       "JavaScript: Interatividade e manipulação do DOM.",
       "Vercel: Plataforma de hospedagem para deploy contínuo e infraestrutura escalável.",
     ],
+    githubURL:
+      "https://github.com/patricklimax/html-css-js-site-starbucks-clone",
+    onlineURL: "",
     functionalities: [
       "Interface Responsiva: O layout se adapta a diferentes tamanhos de tela, proporcionando uma boa experiência tanto em dispositivos móveis quanto em desktops.",
       "Navegação Simulada: Links e menus recriados para simular a navegação do site original.",
@@ -133,6 +143,8 @@ export const projects: Project[] = [
       "Menu Fixo: Implementação de um menu de navegação fixo que permanece visível durante a rolagem, facilitando a navegação do usuário.",
       "Vercel: Utilizado para o deploy e hospedagem do site, garantindo que o projeto esteja disponível online com facilidade.",
     ],
+    githubURL: "https://github.com/patricklimax/html-css-js-todesign-clone",
+    onlineURL: "",
     functionalities: [
       "Design Responsivo: O site adapta-se a diferentes tamanhos de tela e dispositivos, proporcionando uma experiência consistente.",
       "Layout com Flexbox: Organização eficiente dos elementos da página utilizando Flexbox, assegurando uma estrutura flexível e bem distribuída.",
@@ -162,6 +174,8 @@ export const projects: Project[] = [
       "JavaScript: Utilizado para adicionar animações e interatividade, com foco em efeitos de hover que trazem dinamismo ao site.",
       "Vercel: Plataforma escolhida para o deploy e hospedagem do projeto, permitindo que o site esteja disponível online rapidamente.",
     ],
+    githubURL: "https://github.com/patricklimax/html-css-js-hoverslider-clone",
+    onlineURL: "",
     functionalities: [
       "Design Responsivo: O site foi desenvolvido para ser totalmente responsivo, adaptando-se a diferentes dispositivos e tamanhos de tela.",
       "Layout com Flexbox: Utilização de Flexbox para organizar e alinhar os elementos da página de maneira flexível e visualmente equilibrada.",
@@ -171,65 +185,33 @@ export const projects: Project[] = [
     ],
   },
   {
-    id: 159607,
-    name: "Site com Tema de Cores - Clone",
-    class: "principal",
+    id: 160510,
+    name: "Calculadora",
+    class: "others",
     descriptionCover:
-      '"Site com Tema de Cores" é um projeto de site de landing page desenvolvido como parte dos meus estudos em desenvolvimento web.',
+      "Este projeto é uma calculadora simples e funcional desenvolvida com HTML, CSS e JavaScript puro.",
     descriptionProject:
-      '"Site com Tema de Cores" é um projeto de site de landing page desenvolvido como parte dos meus estudos em desenvolvimento web. Este projeto foi criado para explorar e praticar o uso de HTML, CSS, Flexbox, animações e JavaScript. O site inclui um menu animado, rolagem de tela suave com animações, e a funcionalidade de mudança de tema de cores, permitindo que os usuários alternem entre diferentes paletas de cores. O foco principal foi criar uma experiência de usuário interativa e visualmente cativante.',
+      "Este projeto é uma calculadora simples e funcional desenvolvida com HTML, CSS e JavaScript puro. O objetivo é oferecer uma ferramenta básica para realizar operações matemáticas, com uma interface amigável e responsiva. Este projeto é ideal para quem deseja aprender mais sobre como construir uma calculadora do zero utilizando tecnologias web fundamentais.",
     imgUrlCover:
-      "https://uploadthing-prod-sea1.s3.us-west-2.amazonaws.com/225c7440-24ae-4ae3-b16e-fa733830f0f1-eguhko.png",
+      "https://uploadthing-prod-sea1.s3.us-west-2.amazonaws.com/64938ba9-659e-4ade-8736-9271f6dfc4f7-hs136q.png",
     imgUrlTech:
-      "https://uploadthing-prod-sea1.s3.us-west-2.amazonaws.com/81d3dff3-4f33-4c4e-b4e7-9d2d41602bf3-eguhkn.png",
+      "https://uploadthing-prod-sea1.s3.us-west-2.amazonaws.com/341d17b3-6e1a-4ecd-900e-e7fd65d90c83-hs136r.png",
     imgUrlFunc:
-      "https://uploadthing-prod-sea1.s3.us-west-2.amazonaws.com/9325d9bd-2d02-4e11-8a0c-118d24169e5b-eguhkm.png",
+      "https://uploadthing-prod-sea1.s3.us-west-2.amazonaws.com/1f78aa80-d1fe-42a9-8e32-c8453b2fd170-hs136s.png",
     technologies: [
-      "HTML: Utilizado para estruturar o conteúdo da página, proporcionando uma base sólida e semântica.",
-      "CSS: Responsável pela estilização do site, com ênfase em design responsivo, animações e transições suaves.",
-      "Flexbox: Implementado para criar um layout flexível e bem organizado, garantindo uma estrutura harmoniosa dos elementos na página.",
-      "JavaScript: Utilizado para adicionar interatividade ao site, incluindo a mudança de tema de cores e animações durante a rolagem de tela.",
-      "Vercel: Plataforma escolhida para o deploy e hospedagem do projeto, facilitando o acesso e distribuição do site online.",
+      "HTML: Marca a estrutura do conteúdo da calculadora.",
+      "CSS: Estiliza a interface, garantindo que a calculadora seja visualmente agradável e funcional em diferentes dispositivos.",
+      "CSS Grid: Utilizado para criar o layout responsivo e organizado da calculadora.",
+      "JavaScript Puro: Manipula a lógica das operações matemáticas e a interação do usuário com a interface.",
+      "Vercel: Plataforma de deployment utilizada para hospedar a calculadora, permitindo que ela seja acessada online.",
     ],
+    githubURL: "",
+    onlineURL: "",
     functionalities: [
-      "Design Responsivo: O site foi projetado para ser completamente responsivo, adaptando-se a diferentes tamanhos de tela e dispositivos.",
-      "Layout com Flexbox: Organização eficiente dos elementos da página utilizando Flexbox, assegurando uma estrutura flexível e alinhada.",
-      "Animações CSS: Inclusão de animações e transições suaves para melhorar a experiência visual e a interatividade do site.",
-      "Menu Animado: Implementação de um menu de navegação animado que enriquece a experiência de usuário, oferecendo uma navegação fluida.",
-      "Rolagem de Tela com Animações: Adição de animações que são ativadas durante a rolagem, tornando a navegação mais dinâmica e atraente.",
-      "Mudança de Tema de Cores: Funcionalidade que permite ao usuário alternar entre diferentes temas de cores, proporcionando personalização da experiência de navegação.",
-      "Deploy na Vercel: O site está online e acessível através da Vercel, com deploy rápido e fácil, garantindo uma experiência de uso otimizada.",
-    ],
-  },
-  {
-    id: 160908,
-    name: "Página Halloween - Clone",
-    class: "principal",
-    descriptionCover:
-      '"HALLOPAGE" é um projeto de landing page desenvolvido como parte dos meus estudos em desenvolvimento web.',
-    descriptionProject:
-      '"HALLOPAGE" é um projeto de landing page desenvolvido como parte dos meus estudos em desenvolvimento web. Este projeto foi criado para praticar e aprimorar habilidades em HTML, CSS, Flexbox, e JavaScript, com foco na criação de uma experiência de usuário interativa e visualmente atraente. O site conta com um menu animado, rolagem de tela suave com animações, e várias transições e efeitos visuais que enriquecem a navegação.',
-    imgUrlCover:
-      "https://utfs.io/f/acfdb95a-eb41-41a1-b806-93ba37458169-k9421x.png",
-    imgUrlTech:
-      "https://uploadthing-prod-sea1.s3.us-west-2.amazonaws.com/d77d6bfe-405b-4fbb-b331-38a86a03fecf-k9421w.png",
-    imgUrlFunc:
-      "https://uploadthing-prod-sea1.s3.us-west-2.amazonaws.com/48ed495f-fd15-4a64-a081-a1e62165147a-k9421v.png",
-    technologies: [
-      "HTML: Estruturação semântica do conteúdo da página, proporcionando uma base sólida e organizada.",
-      "CSS: Estilização completa do site, incluindo design responsivo e animações CSS para melhorar a experiência visual.",
-      "Flexbox: Utilizado para criar um layout flexível e alinhado, garantindo uma disposição harmônica dos elementos na página.",
-      "JavaScript: Implementado para adicionar interatividade, como a animação do menu, rolagem suave e outras funcionalidades dinâmicas.",
-      "Vercel: Plataforma escolhida para o deploy e hospedagem do projeto, facilitando a distribuição e acesso ao site online.",
-    ],
-    functionalities: [
-      "Design Responsivo: O site adapta-se perfeitamente a diferentes tamanhos de tela e dispositivos, proporcionando uma experiência de usuário consistente e fluida.",
-      "Layout com Flexbox: Organização eficiente dos elementos da página utilizando Flexbox, garantindo um layout flexível e bem distribuído.",
-      "Animações CSS: Inclusão de animações visuais que tornam a navegação mais dinâmica e interativa, criando uma experiência mais envolvente.",
-      "Menu Animado: Implementação de um menu de navegação com animações que melhoram a interatividade e a experiência de navegação do usuário.",
-      "Rolagem de Tela com Animações: Adição de efeitos de rolagem suave e animações ao longo da página, proporcionando uma navegação mais agradável e contínua.",
-      "Interatividade com JavaScript: Uso de JavaScript para adicionar funcionalidades dinâmicas, como animações durante a rolagem e comportamentos interativos do menu.",
-      "Deploy na Vercel: O site está online e acessível através da Vercel, com deploy rápido e fácil, garantindo uma experiência de uso otimizada.",
+      "Operações Básicas: Realiza operações matemáticas simples como adição, subtração, multiplicação e divisão.",
+      "Interface Responsiva: A calculadora é projetada para funcionar bem em diferentes tamanhos de tela, desde desktops até dispositivos móveis.",
+      "Teclado Virtual: Botões que representam os dígitos e operadores matemáticos, facilitando a interação do usuário.",
+      "Feedback Visual: Destaques visuais ao pressionar botões, proporcionando uma experiência de uso intuitiva e agradável.",
     ],
   },
   {
@@ -252,6 +234,8 @@ export const projects: Project[] = [
       "JavaScript: Implementação da lógica de geração de senhas e manipulação do DOM para interação do usuário.",
       "Vercel: Plataforma usada para hospedar o projeto, garantindo deploy contínuo e acesso rápido.",
     ],
+    githubURL: "",
+    onlineURL: "",
     functionalities: [
       "Geração de Senhas Aleatórias: Crie senhas seguras com base em diferentes critérios definidos pelo usuário.",
       "Opções de Personalização: Defina o comprimento da senha.",
@@ -261,34 +245,7 @@ export const projects: Project[] = [
       "Design Simples e Intuitivo: Interface limpa e fácil de usar, focada na usabilidade e acessibilidade.",
     ],
   },
-  {
-    id: 166510,
-    name: "Calculadora",
-    class: "others",
-    descriptionCover:
-      "Este projeto é uma calculadora simples e funcional desenvolvida com HTML, CSS e JavaScript puro.",
-    descriptionProject:
-      "Este projeto é uma calculadora simples e funcional desenvolvida com HTML, CSS e JavaScript puro. O objetivo é oferecer uma ferramenta básica para realizar operações matemáticas, com uma interface amigável e responsiva. Este projeto é ideal para quem deseja aprender mais sobre como construir uma calculadora do zero utilizando tecnologias web fundamentais.",
-    imgUrlCover:
-      "https://uploadthing-prod-sea1.s3.us-west-2.amazonaws.com/64938ba9-659e-4ade-8736-9271f6dfc4f7-hs136q.png",
-    imgUrlTech:
-      "https://uploadthing-prod-sea1.s3.us-west-2.amazonaws.com/341d17b3-6e1a-4ecd-900e-e7fd65d90c83-hs136r.png",
-    imgUrlFunc:
-      "https://uploadthing-prod-sea1.s3.us-west-2.amazonaws.com/1f78aa80-d1fe-42a9-8e32-c8453b2fd170-hs136s.png",
-    technologies: [
-      "HTML: Marca a estrutura do conteúdo da calculadora.",
-      "CSS: Estiliza a interface, garantindo que a calculadora seja visualmente agradável e funcional em diferentes dispositivos.",
-      "CSS Grid: Utilizado para criar o layout responsivo e organizado da calculadora.",
-      "JavaScript Puro: Manipula a lógica das operações matemáticas e a interação do usuário com a interface.",
-      "Vercel: Plataforma de deployment utilizada para hospedar a calculadora, permitindo que ela seja acessada online.",
-    ],
-    functionalities: [
-      "Operações Básicas: Realiza operações matemáticas simples como adição, subtração, multiplicação e divisão.",
-      "Interface Responsiva: A calculadora é projetada para funcionar bem em diferentes tamanhos de tela, desde desktops até dispositivos móveis.",
-      "Teclado Virtual: Botões que representam os dígitos e operadores matemáticos, facilitando a interação do usuário.",
-      "Feedback Visual: Destaques visuais ao pressionar botões, proporcionando uma experiência de uso intuitiva e agradável.",
-    ],
-  },
+
   {
     id: 180111,
     name: "Menu Pizza Cart",
@@ -310,6 +267,8 @@ export const projects: Project[] = [
       "JavaScript Puro: Implementa a lógica de interatividade, como o gerenciamento do carrinho, abertura de modais e atualização dinâmica das quantidades.",
       "Vercel: Plataforma de deployment utilizada para hospedar a aplicação, permitindo que ela seja acessada online.",
     ],
+    githubURL: "",
+    onlineURL: "",
     functionalities: [
       "Visualização do Menu: Exibe uma lista de pizzas com detalhes como preço, tamanho disponível e opção para escolher a quantidade.",
       "Modal de Confirmação: Ao adicionar uma pizza ao carrinho, um modal é aberto para confirmar a seleção, garantindo que o usuário tenha certeza da escolha antes de prosseguir.",
@@ -338,6 +297,8 @@ export const projects: Project[] = [
       "JavaScript Puro: Implementa a lógica que faz o relógio funcionar em tempo real, atualizando tanto os ponteiros quanto a exibição digital com base na hora atual.",
       "Vercel: Plataforma de deployment utilizada para hospedar o relógio, permitindo que ele seja acessado online.",
     ],
+    githubURL: "",
+    onlineURL: "",
     functionalities: [
       "Relógio Analógico: Exibe a hora atual com ponteiros para horas, minutos e segundos, simulando um relógio físico.",
       "Relógio Digital: Mostra a hora atual em formato digital (HH:MM), oferecendo uma visualização alternativa do tempo.",
