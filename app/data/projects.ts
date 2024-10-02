@@ -2,6 +2,68 @@ import type { Project } from "@/interfaces/project-item";
 
 export const projects: Project[] = [
   {
+    id: 212815,
+    name: "Calculadora IMC",
+    class: "principal",
+    descriptionCover:
+      "A Calculadora IMC é uma aplicação web desenvolvida com o objetivo de calcular o Índice de Massa Corporal (IMC) com base no peso e altura fornecidos pelo usuário.",
+    descriptionProject:
+      "A Calculadora IMC é uma aplicação web desenvolvida com o objetivo de calcular o Índice de Massa Corporal (IMC) com base no peso e altura fornecidos pelo usuário. Esta ferramenta permite uma análise rápida da condição física de uma pessoa, categorizando o resultado em diferentes faixas de IMC (baixo peso, normal, sobrepeso, etc.).",
+    imgUrlCover:
+      "https://utfs.io/f/T771UCDelI3G39ShJ77QzqXABGsan7Vp06lJZ8cQ4iwmKgDb",
+    imgUrlTech:
+      "https://utfs.io/f/T771UCDelI3GWfJTX0XE3cf2LaGX6QySE5KkneIzsD4mUqp7",
+    imgUrlFunc:
+      "https://utfs.io/f/T771UCDelI3GRvbDPKYXoMbS78dArzlfUg6DnVaqtejIxQkO",
+    githubURL: "https://github.com/patricklimax/react-next-imc-calculator",
+    onlineURL: "",
+    technologies: [
+      "React: Biblioteca JavaScript para a construção de interfaces de usuário.",
+      "Next.js: Framework React para renderização do lado do servidor (SSR) e construção de aplicações web modernas.",
+      "Tailwind CSS: Um framework CSS utilitário para estilização rápida e consistente.",
+      "TypeScript: Superset do JavaScript que adiciona tipagem estática ao código, garantindo maior segurança e eficiência no desenvolvimento.",
+    ],
+    functionalities: [
+      "Cálculo do IMC: O usuário pode inserir seu peso (em kg) e altura (em metros), e o sistema calculará automaticamente o IMC.",
+      "Classificação do IMC: O resultado do IMC será classificado em categorias como: baixo peso, peso normal, sobrepeso e obesidade.",
+      "Feedback visual: A interface ajusta sua exibição para destacar a categoria correspondente ao IMC calculado.",
+      "Responsividade: A aplicação é responsiva, garantindo uma experiência fluida em dispositivos móveis e desktops.",
+    ],
+  },
+  {
+    id: 229325,
+    name: "Lista de Compras",
+    class: "principal",
+    descriptionCover:
+      "O Lista de Compras é um projeto que permite aos usuários criar uma lista de compras, adicionar, editar, remover itens e marcar aqueles que já foram adicionados ao carrinho. ",
+    descriptionProject:
+      "O Lista de Compras é um projeto desenvolvido utilizando React com TypeScript, como parte de um sistema de gerenciamento de listas de compras. A aplicação permite aos usuários adicionar, editar, remover itens e marcar aqueles que já foram adicionados ao carrinho. O projeto foi construído com uma interface moderna e intuitiva, utilizando a biblioteca de componentes Shadcn UI e ícones do Lucide. O Vite foi utilizado como ferramenta de build para otimizar o desenvolvimento.",
+    imgUrlCover:
+      "https://utfs.io/f/T771UCDelI3G5EaOs5Y8WGPg23LRczhOAiMs6EIuHeCfqlmB",
+    imgUrlTech:
+      "https://utfs.io/f/T771UCDelI3G1wpPDuDzNbyzc2HDfUjBWkOCpLXE4twYe30s",
+    imgUrlFunc:
+      "https://utfs.io/f/T771UCDelI3GBVnFw4tHVmIWsSNfLcZ4nPDg9bwRCTkv2jAF",
+    githubURL: "https://github.com/patricklimax/react-vite-shopping-list",
+    onlineURL: "https://shopping-list-patricklimax.vercel.app/",
+    technologies: [
+      "React: Biblioteca JavaScript para construção de interfaces de usuário. ",
+      "Vite: Ferramenta de build rápida e leve para desenvolvimento com React.",
+      "Shadcn UI: Biblioteca de componentes React para estilização de interfaces.",
+      "Lucide: Pacote de ícones utilizados na aplicação para melhorar a experiência do usuário.",
+      "Tailwind CSS: Framework de CSS utilitário para estilização rápida e responsiva.",
+      "TypeScript: Superset do JavaScript que adiciona tipagem estática ao projeto.",
+    ],
+    functionalities: [
+      "Adicionar itens: Permite adicionar novos produtos à lista de compras.",
+      "Editar itens: Opção de editar os produtos já existentes na lista.",
+      "Remover itens: Funcionalidade para excluir itens da lista de compras.",
+      "Marcar itens como comprados: Opção de marcar produtos que já foram colocados no carrinho, diferenciando visualmente na interface.",
+      "Armazenamento Local com localStorage: A lista de compras é salva diretamente no navegador do usuário, garantindo que as informações permaneçam disponíveis mesmo após o fechamento do navegador.",
+      "Interface Responsiva: A aplicação se adapta a diferentes tamanhos de tela, oferecendo uma experiência consistente em dispositivos móveis e desktop.",
+    ],
+  },
+  {
     id: 103901,
     name: "Awax Clone",
     class: "others",
@@ -19,7 +81,6 @@ export const projects: Project[] = [
       "HTML: Utilizado para estruturar o conteúdo do site.",
       "CSS: Usado para estilizar o site, com foco na criação de um design responsivo.",
       "Flexbox: Implementado para gerenciar o layout de forma eficiente, garantindo uma distribuição adequada dos elementos na página.",
-      "Vercel: Plataforma utilizada para o deploy e hospedagem do projeto.",
     ],
     githubURL: "https://github.com/patricklimax/html-css-js-site-awax",
     onlineURL: "",
@@ -27,7 +88,6 @@ export const projects: Project[] = [
       "Design Responsivo: O site é totalmente responsivo, adaptando-se a diferentes tamanhos de tela e dispositivos.",
       "Clonagem de Layout: Replicação fiel do layout original do site Awax, incluindo elementos visuais como cabeçalhos, seções de conteúdo e rodapés.",
       "Estruturação Semântica: O código HTML foi estruturado de forma semântica, facilitando a compreensão e a manutenção do código.",
-      "Deploy Rápido: Hospedagem realizada na plataforma Vercel, permitindo que o site esteja disponível online com rapidez e eficiência.",
     ],
   },
   {
@@ -49,7 +109,6 @@ export const projects: Project[] = [
       "CSS: Utilizado para estilização do site, com foco em design responsivo e animações visuais.",
       "Flexbox: Ferramenta principal para a criação de layouts flexíveis e alinhados, garantindo uma disposição eficiente dos elementos.",
       "JavaScript: Implementado para adicionar interatividade, como o menu animado e a rolagem suave na navegação.",
-      "Vercel: Plataforma utilizada para o deploy e hospedagem do site, garantindo fácil acesso e distribuição.",
     ],
     githubURL:
       "https://github.com/patricklimax/html-css-js-site-patricklimax-first",
@@ -60,13 +119,12 @@ export const projects: Project[] = [
       "Animações CSS: Inclusão de animações visuais para melhorar a experiência do usuário, adicionando dinamismo ao design.",
       "Menu Animado com Rolagem de Tela: Implementação de um menu de navegação animado, que se ajusta conforme o usuário rola a página, facilitando o acesso a diferentes seções.",
       "Interatividade com JavaScript: Adição de funcionalidades interativas ao site, como a rolagem suave e comportamentos dinâmicos do menu de navegação.",
-      "Deploy na Vercel: O site está online e acessível através da Vercel, com deploy rápido e fácil, permitindo uma experiência de uso otimizada.",
     ],
   },
   {
     id: 109303,
     name: "Site Meelink",
-    class: "principal",
+    class: "others",
     descriptionCover:
       'O projeto "Site Meelink" é uma recriação de um site fictício, desenvolvida com o intuito de praticar habilidades em HTML, CSS e Grid Layout.',
     descriptionProject:
@@ -81,7 +139,6 @@ export const projects: Project[] = [
       "HTML: Estrutura básica do site, organizando o conteúdo de forma lógica e acessível.",
       "CSS: Responsável pela estilização e aparência do site, aplicando design moderno e adaptável.",
       "Grid Layout: Ferramenta principal para criar o layout do site, permitindo uma organização eficiente dos elementos na página.",
-      "Vercel: Utilizado para o deploy e hospedagem do site, garantindo uma entrega rápida e fácil acesso ao projeto.",
     ],
     githubURL: "https://github.com/patricklimax/html-css-js-site-meelink",
     onlineURL: "",
@@ -89,13 +146,12 @@ export const projects: Project[] = [
       "Design Responsivo: O site é projetado para ser completamente responsivo, adaptando-se a diferentes resoluções de tela e dispositivos.",
       "Layout com CSS Grid: Implementação de um layout avançado utilizando CSS Grid, garantindo uma disposição flexível e ordenada dos elementos.",
       "Estruturação Semântica: O HTML foi estruturado de maneira semântica, promovendo a acessibilidade e a facilidade de manutenção do código.",
-      "Hospedagem na Vercel: O projeto está disponível online graças à hospedagem na Vercel, proporcionando acesso rápido e fácil.",
     ],
   },
   {
     id: 110104,
     name: "Starbucks Clone",
-    class: "principal",
+    class: "others",
     descriptionCover:
       "O Clone do Starbucks é um projeto de front-end que recria a interface do site da Starbucks, utilizando apenas HTML e CSS.",
     descriptionProject:
@@ -110,7 +166,6 @@ export const projects: Project[] = [
       "HTML5: Estruturação das páginas web.",
       "CSS3: Estilização e layout, utilizando Flexbox e Grid.",
       "JavaScript: Interatividade e manipulação do DOM.",
-      "Vercel: Plataforma de hospedagem para deploy contínuo e infraestrutura escalável.",
     ],
     githubURL:
       "https://github.com/patricklimax/html-css-js-site-starbucks-clone",
@@ -125,7 +180,7 @@ export const projects: Project[] = [
   {
     id: 111405,
     name: "Design Clone",
-    class: "principal",
+    class: "others",
     descriptionCover:
       'O projeto "Design Clone" é uma recriação de um site fictício, desenvolvido durante meus estudos em desenvolvimento web.',
     descriptionProject:
@@ -141,7 +196,6 @@ export const projects: Project[] = [
       "CSS: Estilização completa do site, com ênfase em design moderno e responsivo.",
       "Flexbox: Ferramenta utilizada para o layout, permitindo uma organização flexível e alinhada dos elementos na página.",
       "Menu Fixo: Implementação de um menu de navegação fixo que permanece visível durante a rolagem, facilitando a navegação do usuário.",
-      "Vercel: Utilizado para o deploy e hospedagem do site, garantindo que o projeto esteja disponível online com facilidade.",
     ],
     githubURL: "https://github.com/patricklimax/html-css-js-todesign-clone",
     onlineURL: "",
@@ -150,7 +204,6 @@ export const projects: Project[] = [
       "Layout com Flexbox: Organização eficiente dos elementos da página utilizando Flexbox, assegurando uma estrutura flexível e bem distribuída.",
       "Menu Fixo: Implementação de um menu de navegação que permanece fixo no topo da página durante a rolagem, facilitando o acesso às diferentes seções do site.",
       "Estilização Avançada com CSS: Uso de CSS para criar um design moderno e atraente, com atenção aos detalhes visuais.",
-      "Deploy na Vercel: O projeto foi hospedado na Vercel, permitindo acesso rápido e eficiente ao site online.",
     ],
   },
   {
@@ -172,7 +225,6 @@ export const projects: Project[] = [
       "CSS: Utilizado para estilizar o site, focando em design responsivo e integração de efeitos visuais.",
       "Flexbox: Implementado para criar um layout flexível e eficiente, garantindo uma boa distribuição dos elementos na página.",
       "JavaScript: Utilizado para adicionar animações e interatividade, com foco em efeitos de hover que trazem dinamismo ao site.",
-      "Vercel: Plataforma escolhida para o deploy e hospedagem do projeto, permitindo que o site esteja disponível online rapidamente.",
     ],
     githubURL: "https://github.com/patricklimax/html-css-js-hoverslider-clone",
     onlineURL: "",
@@ -181,12 +233,11 @@ export const projects: Project[] = [
       "Layout com Flexbox: Utilização de Flexbox para organizar e alinhar os elementos da página de maneira flexível e visualmente equilibrada.",
       "Animações de Hover: Implementação de animações que são ativadas ao passar o mouse sobre os elementos, criando uma experiência de usuário interativa e envolvente.",
       "Interatividade com JavaScript: Uso de JavaScript para controlar e personalizar as animações de página, garantindo uma navegação dinâmica.",
-      "Deploy na Vercel: O projeto foi hospedado na Vercel, garantindo acesso fácil e rápido ao site online.",
     ],
   },
   {
     id: 160510,
-    name: "Calculadora",
+    name: "Calculadora Simples",
     class: "others",
     descriptionCover:
       "Este projeto é uma calculadora simples e funcional desenvolvida com HTML, CSS e JavaScript puro.",
@@ -203,9 +254,8 @@ export const projects: Project[] = [
       "CSS: Estiliza a interface, garantindo que a calculadora seja visualmente agradável e funcional em diferentes dispositivos.",
       "CSS Grid: Utilizado para criar o layout responsivo e organizado da calculadora.",
       "JavaScript Puro: Manipula a lógica das operações matemáticas e a interação do usuário com a interface.",
-      "Vercel: Plataforma de deployment utilizada para hospedar a calculadora, permitindo que ela seja acessada online.",
     ],
-    githubURL: "",
+    githubURL: "https://github.com/patricklimax/js-simple-calculator",
     onlineURL: "",
     functionalities: [
       "Operações Básicas: Realiza operações matemáticas simples como adição, subtração, multiplicação e divisão.",
@@ -232,7 +282,6 @@ export const projects: Project[] = [
       "HTML5: Utilizado para estruturar o conteúdo da aplicação.",
       "CSS3: Utilizado para estilizar a aplicação e criar layouts responsivos, utilizando Flexbox e Grid.",
       "JavaScript: Implementação da lógica de geração de senhas e manipulação do DOM para interação do usuário.",
-      "Vercel: Plataforma usada para hospedar o projeto, garantindo deploy contínuo e acesso rápido.",
     ],
     githubURL: "",
     onlineURL: "",
@@ -245,7 +294,6 @@ export const projects: Project[] = [
       "Design Simples e Intuitivo: Interface limpa e fácil de usar, focada na usabilidade e acessibilidade.",
     ],
   },
-
   {
     id: 180111,
     name: "Menu Pizza Cart",
@@ -265,7 +313,6 @@ export const projects: Project[] = [
       "CSS: Estiliza a interface do usuário, garantindo que o menu de pizzas seja atraente e fácil de usar.",
       "CSS Grid: Utilizado para criar um layout organizado e responsivo, facilitando a disposição dos elementos na página.",
       "JavaScript Puro: Implementa a lógica de interatividade, como o gerenciamento do carrinho, abertura de modais e atualização dinâmica das quantidades.",
-      "Vercel: Plataforma de deployment utilizada para hospedar a aplicação, permitindo que ela seja acessada online.",
     ],
     githubURL: "",
     onlineURL: "",
@@ -295,9 +342,8 @@ export const projects: Project[] = [
       "HTML: Estrutura a marcação do relógio, definindo os elementos da interface.",
       "CSS: Estiliza o relógio, criando um design atraente e garantindo que a interface seja responsiva.",
       "JavaScript Puro: Implementa a lógica que faz o relógio funcionar em tempo real, atualizando tanto os ponteiros quanto a exibição digital com base na hora atual.",
-      "Vercel: Plataforma de deployment utilizada para hospedar o relógio, permitindo que ele seja acessado online.",
     ],
-    githubURL: "",
+    githubURL: "https://github.com/patricklimax/js-clock-digital-analogic",
     onlineURL: "",
     functionalities: [
       "Relógio Analógico: Exibe a hora atual com ponteiros para horas, minutos e segundos, simulando um relógio físico.",
