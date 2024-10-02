@@ -89,7 +89,7 @@ const ProjectDetailsPage = ({ params }: ProfessionalDetailsPageProps) => {
 					<Card className='w-full md:w-1/2'>
 						<CardContent>
 							<CardTitle className='w-full text-start text-lg font-medium uppercase text-primary'>
-								Funcionalidades da Aplicação
+								Funcionalidades
 							</CardTitle>
 
 							<div>
@@ -122,7 +122,7 @@ const ProjectDetailsPage = ({ params }: ProfessionalDetailsPageProps) => {
 					<Card className='w-full md:w-1/2'>
 						<CardContent>
 							<CardTitle className='w-full text-start text-lg font-medium uppercase text-primary'>
-								Tecnologias usadas no Projeto
+								Tecnologias Utilizadas
 							</CardTitle>
 
 							<div>
